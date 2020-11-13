@@ -35,7 +35,10 @@ int main()
   printf("%d",a[2]);
   printf("%d",2[a]);
   printf("%d",*(a+2));
+
+     return 0;
 }
+
   
    
   
