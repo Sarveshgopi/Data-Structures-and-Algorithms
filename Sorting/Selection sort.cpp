@@ -4,7 +4,7 @@ int main()
 {
     long int n;
     std::cin>>n;
-    long int a[n],i,j;
+    long int a[n],i,j,t=0;
     for(i=0;i<n;i++)
     {
         std::cin>>a[i];
