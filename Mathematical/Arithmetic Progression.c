@@ -1,6 +1,8 @@
-/*   ALGORITHM:
+/*   Arithmetic Progression is said to be a series of numbers, in which the difference between any two consecutive numbers are same.
+         ALGORITHM:
                The nth term in the arithmetic progression is firstterm + (n-1)*commondifference
                The sum of first n numbers is (0.5*n) + (2*firstterm)+(n-1)*commondifference             */
+
 #include<stdio.h>
 #include<stdlib.h>
 int main()
