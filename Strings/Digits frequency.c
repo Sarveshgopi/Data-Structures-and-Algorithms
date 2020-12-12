@@ -10,7 +10,7 @@ int main()
          c=0;
          for(j=0;j<strlen(a);j++)
          {
-             if(a[j]==i)
+             if(isdigit(a[j]) && a[j]==i)
              {
                 c++;
               }
