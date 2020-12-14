@@ -1,5 +1,5 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include<stdio.h>
+#include<conio.h>
 
 struct LL
 {
