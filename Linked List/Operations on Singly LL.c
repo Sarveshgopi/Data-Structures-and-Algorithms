@@ -49,7 +49,8 @@ int count(struct LL *v)
 
 int max(struct LL *w)
 {
-    int m=0;
+    int m=w->data;
+    w=w->next;
     while(w)
     {
        if((w->data)>m)
