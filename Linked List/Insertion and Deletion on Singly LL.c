@@ -27,7 +27,7 @@ struct LL
 
 void insert(struct LL *p,int pos,int ele)
 {
-     if(pos>=0 && pos<=n)
+     if(pos>=0)
      {
          struct LL *newnode;
          newnode=(struct LL*)malloc(sizeof(struct LL*));
@@ -39,7 +39,12 @@ void insert(struct LL *p,int pos,int ele)
          }
          else
          {
-             
+             for(int i=0;i<pos-1 && p!=NULL;i++)
+             {
+                 p=p->next;
+             }
+             newnode->next=p->next;
+             p->next=newnode;
          }
      }
 }
