@@ -62,11 +62,36 @@ int max(struct LL *w)
     return m;
 }
 
+void search(struct LL *r,int key)
+{
+    if(r==NULL)
+    {
+        printf("No Element in the list");
+    }
+    else
+    {
+        while(r)
+        {
+            if(r->data==key)
+            {
+                printf("The element is present");
+                flag++;
+                break;
+            }
+            r=r->next;
+        }
+        if(flag==0)
+        {
+            printf("The element is not found");
+        }
+    }
+}
+
 int main()
 {
    int n;
    scanf("%d",&n);
-   int a[n],z;
+   int a[n],z,key;
    for(z=0;z<n;z++)
    {
       scanf("%d ",&a[z]);
@@ -75,6 +100,8 @@ int main()
    printf("The Sum of the list is %d\n",sum(first));
    printf("The Number of nodes present in the list is %d\n",count(first));
    printf("The maximum element in the list is %d\n",max(first));
+   scanf("Enter the Element to be searched %d",&key);
+   search(first,key);
    return 0;
 }
     
