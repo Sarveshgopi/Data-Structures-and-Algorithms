@@ -49,11 +49,23 @@ void insert(struct LL *p,int pos,int ele)
      }
 }
 
+void delete(struct node *p,int pos1)
+{
+    if(pos1>=0)
+    {
+        if(pos1==0)
+        {
+            struct node *temp=first;
+            first=first->next;
+            free(temp);
+        }
+    }
+}
 int main()
 {
       int n;
       scanf("%d",&n);
-      int a[n],z,pos,ele;
+      int a[n],z,pos,ele,pos1;
       for(z=0;z<n;z++)
       {
           scanf("%d ",&a[z]);
@@ -62,5 +74,7 @@ int main()
     scanf("Enter the position(starts from 1) for insertion %d\n",&pos);
     scanf("Enter the element to be inserted %d",&ele);
     insert(first,pos,ele);
+    scanf("Enter the position of the node to be deleted %d",&pos1);
+    delete(first,pos1);
     return 0;
 }
