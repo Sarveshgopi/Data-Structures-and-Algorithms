@@ -59,6 +59,14 @@ void delete(struct node *p,int pos1)
             first=first->next;
             free(temp);
         }
+        else
+        {
+            int i;
+            for(i=0;i<pos1;i++)
+            {
+                p=p->next;
+            }
+        }
     }
 }
 int main()
