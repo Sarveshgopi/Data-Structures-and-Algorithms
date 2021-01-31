@@ -27,12 +27,14 @@
     {
         if(p->data < q->data)
         {
+             last->next=p;
              last=p;
              p=p->next;
              last->next=NULL;
         }
         else
         {
+            last->next=q;
             last=q;
             q=q->next;
             last->next=NULL;
