@@ -15,13 +15,13 @@
     {
          third=last=p;
          p=p->next;
-         last->next=NULL;
+         third->next=NULL;
     }
     else
     {
          third=last=q;
          q=q->next;
-         last->next=NULL;
+         third->next=NULL;
     }
     while(p && q)
     {
