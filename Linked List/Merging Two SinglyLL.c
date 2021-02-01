@@ -10,6 +10,19 @@
  
  struct LL *merge(struct LL* first, struct LL* second)
  {
+    if(first==NULL && second==NULL)
+     {
+         return NULL;
+    }
+    else if(first==NULL)
+    {
+       return second;
+    }
+    else if(second==NULL)
+    {
+       return first;
+    }
+  else{
     struct LL *p=first,*q=second,*third,*last;
     if(p->data < q->data)
     {
@@ -50,6 +63,8 @@
       }
       return third;
   }
+}
+
   
   /*
   Analysis:
