@@ -1,4 +1,4 @@
-#inlcude<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 
 struct stack
