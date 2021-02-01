@@ -9,6 +9,16 @@ struct LL
 //Using Sliding pointers...
 struct LL* reverse(struct LL *first)
 {
+     if(first==NULL)
+     {
+         return NULL;
+     }
+    else if(first->next==NULL)
+    {
+        return first;
+    }
+    else
+    {
      struct LL *p=first,*q,*r;
      q=r=NULL;
      while(p!=NULL)
@@ -20,4 +30,5 @@ struct LL* reverse(struct LL *first)
      }
      first=q;
      return first;
- }
+    }
+}
