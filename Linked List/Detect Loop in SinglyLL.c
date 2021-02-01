@@ -10,6 +10,15 @@ struct LL
 struct LL* detect_loop(struct LL *first)
 {
      struct LL *p,*q;
+     if(first==NULL)
+     {
+         return false;
+     }
+    else if(first->next==NULL)
+    {
+        return false;
+    }
+    else{
      p=q=first;
      do
      {
@@ -22,4 +31,5 @@ struct LL* detect_loop(struct LL *first)
        return true;
      }
      return false;
- }
+     }
+}
