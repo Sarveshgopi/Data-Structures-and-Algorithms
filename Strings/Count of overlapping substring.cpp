@@ -23,3 +23,7 @@ int main(int argc, char **argv)
           {
                break;
           }
+     }
+     std::cout<<"The count of overlapping substring is : "<<count<<endl;
+     return 0;
+}
