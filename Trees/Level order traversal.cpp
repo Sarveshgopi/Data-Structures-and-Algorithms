@@ -1,5 +1,13 @@
 /*  This is just a code snippet  */
 
+
+struct node
+{
+  int data;
+  struct node *left,*right;
+}*root=NULL;
+
+
 class Solution
 {
   public:
