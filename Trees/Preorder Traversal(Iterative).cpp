@@ -33,3 +33,4 @@ class solution
            }
          return out;
        }
+};
