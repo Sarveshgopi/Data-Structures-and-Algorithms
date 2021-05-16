@@ -10,3 +10,19 @@ int main(int *argv,char **argc)
     std::string main,sub;
     std::cin>>main;
     std::cin>>sub;
+    ll i,x=0; 
+    for(i=0;i<main.size();i++)
+    {
+        if(main[i]==sub[x])
+        {
+            x++;
+            if(x==sub.size())
+            {
+                std::cout<<"Found"<<endl;
+                exit(0);
+            }
+        }
+    }
+    std::cout<<"Not Found"<<endl;
+    return 0;
+}
