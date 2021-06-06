@@ -9,13 +9,13 @@ struct tree
 }*root=NULL;
 
 
-void postorder(struct tree *root)
+void preorder(struct tree *root)
 {
   if(root==NULL)
   {
     return ;
   }
   std::cout<<root->data<<" ";
-  postorder(root->left);
-  postorder(root->right);
+  preorder(root->left);
+  preorder(root->right);
 }
