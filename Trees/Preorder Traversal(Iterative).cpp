@@ -11,7 +11,7 @@ struct node
 class solution
 {
   public:
-       vector<int> inorder(struct node *root)
+       vector<int> preorder(struct node *root)
        {
            std::stack<struct node*> a;
            a.push(root);
