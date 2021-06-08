@@ -47,4 +47,3 @@ class Solution
         return sum_odd-sum_eve;
     }
 };
-
