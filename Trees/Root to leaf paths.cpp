@@ -14,7 +14,7 @@ void path(Node *p,vector<int> t,vector<vector<int>> &out)
     path(p->right,t,out);
 }
 
-void pathCounts(Node *root)
+void root_to_leaves(Node *root)
 {
     vector<vector<int>> out;
     vector<int> t;
