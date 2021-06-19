@@ -1,8 +1,9 @@
 /*     For Adjacency List     */
 
+
 class Solution
 {
-	public:
+  public:
   vector <int> dijkstra(int V, vector<vector<int>> adj[], int S)
     {
         std::vector<int> out(V,INT_MAX);
