@@ -27,6 +27,6 @@ int main(int *argc,char **argv)
         }
       }
     }
-  std::cout<<out[m][n]<<endl;
-  return 0;
+     std::cout<<out[m][n]<<endl;
+     return 0;
 }
